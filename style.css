@@ -1,0 +1,44 @@
+:root {
+  --radious: 300px;
+}
+body {
+  background-image: url("http://lorempixel.com/1920/1080/abstract");
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+.clock {
+  background-color: thistle;
+  height: var(--radious);
+  width: var(--radious);
+  border: 10px solid black;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hand {
+  border: 2px solid black;
+  height: calc(var(--radious) / 2);
+  transform-origin: bottom;
+  transition: transform 0.05;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  position: absolute;
+  right: 50%;
+  top: calc(50% - (var(--radious) / 2));
+}
+
+.seconds-hand {
+  border: tomato 1px solid;
+  --radious: 280px;
+}
+
+.minutes-hand {
+  --radious: 250px;
+}
+
+.hours-hand {
+  --radious: 220px;
+}
