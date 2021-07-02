@@ -3,6 +3,8 @@
 }
 body {
   background-image: url("http://lorempixel.com/1920/1080/abstract");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
